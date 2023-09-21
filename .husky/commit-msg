@@ -1,0 +1,11 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+npx --no-install commitlint --edit "$1" ||
+  (
+
+    echo '----------------------------------------------------------------------'
+    echo '❌ Improper commit message. Please follow  conventional commit message'
+    echo 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+    false
+  )

@@ -1,0 +1,68 @@
+{
+  "Region CSS": {
+    "prefix": "regc",
+    "body": [
+      "/* #region  /**=========== ${1} =========== */",
+      "$0",
+      "/* #endregion  /**======== ${1} =========== */"
+    ]
+  },
+  "React Functional Component with ClassName Prop": {
+    "prefix": "rcpc",
+    "body": [
+      "import * as React from 'react';",
+      "",
+      "import clsxm from '@/lib/clsxm';",
+      "",
+      "interface ${0:${TM_FILENAME_BASE}}Props {",
+      "className?:string;",
+      "}",
+      "",
+      "const ${0:${TM_FILENAME_BASE}}: React.FC<${0:${TM_FILENAME_BASE}}Props> = (props) => {",
+      "return (<div className={clsxm(['',props.className])}>${0:${TM_FILENAME_BASE}}</div>);",
+      "};",
+      "",
+      "export default ${0:${TM_FILENAME_BASE}};"
+    ]
+  },
+  "React Functional Component with Props": {
+    "prefix": "rcp",
+    "body": [
+      "import * as React from 'react';",
+      "",
+      "interface ${0:${TM_FILENAME_BASE}}Props {}",
+      "",
+      "const ${0:${TM_FILENAME_BASE}}: React.FC<${0:${TM_FILENAME_BASE}}Props> = (props) => {",
+      " return (<div>${0:${TM_FILENAME_BASE}}</div>);",
+      "};",
+      "",
+      "export default ${0:${TM_FILENAME_BASE}};"
+    ]
+  },
+  "React Functional Component": {
+    "prefix": "rc",
+    "body": [
+      "import * as React from 'react';",
+      "",
+      "const ${0:${TM_FILENAME_BASE}}: React.FC = () => {",
+      " return (<div>${0:${TM_FILENAME_BASE}}</div>);",
+      "};",
+      "",
+      "export default ${0:${TM_FILENAME_BASE}};"
+    ]
+  },
+  "React Icon Component": {
+    "prefix": "ric",
+    "body": [
+      "import * as React from 'react';",
+      "",
+      "import clsxm from '@/utils/clsxm';",
+      "",
+      "const ${0:${TM_FILENAME_BASE}}: React.FC<React.ComponentProps<'svg'>> = ({className,...props}) => {",
+      " return ();",
+      "};",
+      "",
+      "export  {${0:${TM_FILENAME_BASE}}};"
+    ]
+  }
+}

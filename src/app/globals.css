@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,600;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.react-international-phone-country-selector-button {
+  @apply !py-5;
+}
+.error .react-international-phone-country-selector-button {
+  @apply !border-error-base;
+}
+
+@layer base {
+  html,
+  body {
+    overflow-x: clip;
+    max-width: 100vw;
+    @apply font-poppins;
+  }
+
+  @keyframes ripple {
+    to {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
+}
+
+@layer utilities {
+  /* START: General styles */
+  .container {
+    @apply mx-auto px-4 sm:max-w-[640px] md:max-w-[768px] md:px-6 lg:max-w-[1024px] lg:px-8 xl:max-w-[1280px] 2xl:max-w-[1536px];
+  }
+
+  .grid-layout {
+    @apply grid  grid-cols-4 gap-x-5 md:grid-cols-8 lg:grid-cols-12 lg:gap-x-7;
+  }
+
+  .padding-y {
+    @apply py-4;
+  }
+
+  .heading {
+    @apply font-poppins text-[2rem] font-semibold leading-[3rem] text-[#2B2B2B] lg:text-[2.5rem] lg:leading-[4rem];
+  }
+
+  .paragraph {
+    @apply mt-2 w-[30ch] px-1 font-poppins text-[1.1rem] font-normal leading-[2rem] text-[#313131] lg:w-[48ch];
+  }
+
+  .paragraph_card {
+    @apply mt-2 w-[30ch] px-1 font-poppins text-[1rem] font-normal leading-[2rem] text-[#313131] lg:w-[48ch];
+  }
+
+  .gradient_blue {
+    background: linear-gradient(
+      90deg,
+      rgba(26, 41, 128, 0.5) 0%,
+      rgba(38, 208, 206, 0.5) 100%
+    );
+  }
+
+  .gradient_white {
+    background: linear-gradient(0deg, #000000, #000000),
+      linear-gradient(180deg, rgba(246, 243, 255, 0) 0%, #becfde 100%);
+  }
+  .blue__gradient {
+    background: linear-gradient(
+      180deg,
+      rgba(188, 165, 255, 0) 0%,
+      #214d76 100%
+    );
+    filter: blur(123px);
+  }
+}
