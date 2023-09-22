@@ -25,7 +25,7 @@ const defaultValues = {
 
 type ContactFormValues = typeof defaultValues;
 
-const ContactModal: React.FC<ContactModalProps> = (props) => {
+const ContactModal: React.FC<ContactModalProps> = () => {
   const { getParam, removeParam } = useQueryParams();
 
   const contact = getParam('contact');

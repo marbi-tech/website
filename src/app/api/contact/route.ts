@@ -3,11 +3,7 @@ import { NextResponse } from 'next/server';
 import { contactSchema } from '@/schemas/contactSchema';
 import sendContactAlertEmail from '@/utils/sendContactAlertEmail';
 
-export const config = {
-  api: {
-    bodyParser: true,
-  },
-};
+
 
 export async function POST(request: Request) {
   try {
