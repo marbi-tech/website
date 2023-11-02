@@ -3,8 +3,6 @@ import { NextResponse } from 'next/server';
 import { contactSchema } from '@/schemas/contactSchema';
 import sendContactAlertEmail from '@/utils/sendContactAlertEmail';
 
-
-
 export async function POST(request: Request) {
   try {
     const contactData = await request.json();
